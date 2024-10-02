@@ -1,0 +1,231 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --background-nav:rgb(41, 95, 152);
+    --background-main:rgb(205, 194, 165);
+    --background-projects:rgb(225, 215, 198);
+    --background-footer:rgb(234, 228, 221);
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    overflow-x: hidden;
+    background-color: white;
+}
+section{
+    background-color: var(--background-main);
+}
+
+nav{
+    width: 100%;
+    z-index: 999;
+    justify-content: space-between;
+    background-color: var(--background-nav);
+    padding:25px;
+}
+.nav-container{
+    max-width: 1140px;
+    margin: auto;
+}
+.justify-content-spcbtw{
+    justify-content: space-between;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+nav .logo a{
+    font-size: 24px;
+    font-weight: 800;
+    color: whites;
+    text-transform:capitalize;
+}
+nav .logo a span{
+    color: bisque;
+}
+nav .menu .nav-item{
+    display: inline-block;
+    position: relative;
+    margin-left: 35px;
+}
+.nav-links{
+    color:white;
+    transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    padding: 10px 0;
+}
+.nav-links:hover{
+    padding-bottom: 0;
+    border-bottom: 2px solid white;
+}
+.even_col{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:20px 0;
+}
+.profile-img img{
+    height: 250px;
+}
+.context{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.skills_container{
+    display: flex;
+    flex-direction: column;
+
+}
+.skill{
+    display: flex;
+    width: 60%;
+    margin:20px;
+    justify-content: space-between;
+
+}
+.services{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.services_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.service_card{
+    width:250px;
+    background:lightgray;
+    display: flex;
+    flex-direction: column;
+    height:150px;
+    justify-content: space-around;
+    margin:10px;
+    padding:10px;
+    text-align: center;
+    border-radius: 15px;
+}
+.projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px 0;
+}
+.filter_buttons button{
+    border-style: none;
+    padding: 10px;
+    text-transform: capitalize;
+    margin:10px;
+    cursor:pointer;
+}
+.projects_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.project_card{
+    padding: 10px;
+    margin: 10px;
+}
+
+.project_card img{
+    width: 250px;
+    border-radius: 15px;
+}
+
+.contacts{
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts_container{
+    display: flex;
+}
+
+.contact_card{
+    width: 250px;
+    margin:10px;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: wheat;
+    align-items: center;
+    height: 80px;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.inputs_container{
+   padding: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "name message"
+    "email message"
+    "subject message"
+    ;
+    gap: 10px;
+}
+.name{
+    grid-area: name;
+}
+.email{
+    grid-area: email;
+}
+.subject{
+    grid-area: subject;
+}
+.message{
+    grid-area: message;
+    
+}
+.inputs_container input,textarea{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+.intro button{
+    margin:10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.inputs button{
+    margin:10px;
+    align-self: end;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.projects,.contacts{
+    background-color: var(--background-projects);
+}
+footer{
+    background-color: blue;
+    padding: 20px;;
+    text-align: center;
+    background-color: var(--background-footer);
+}
