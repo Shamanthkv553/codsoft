@@ -1,31 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>portfolio</title>
 </head>
+
 <body>
+
     <nav>
-        <div class="logo"><img src="./images/logo.png" alt=""></div>
-        <div class="menu">
+        <div class="logo"><img src="./images/logo.png" alt="logo"></div>
+        <div class="menu" id="menu">
             <ul>
-                <li class="nav-items"><a href="" class="nav-links">Home</a></li>
-                <li class="nav-items"><a href="" class="nav-links">About</a></li>
-                <li class="nav-items"><a href="" class="nav-links">Servies</a></li>
-                <li class="nav-items"><a href="" class="nav-links">My Work</a></li>
-                <li class="nav-items"><a href="" class="nav-links">Contact me</a></li>
+                <li class="nav-items"><a href="#top" class="nav-links">Home</a></li>
+                <li class="nav-items"><a href="#about" class="nav-links">About</a></li>
+                <li class="nav-items"><a href="#services" class="nav-links">Services</a></li>
+                <li class="nav-items"><a href="#work" class="nav-links">My Work</a></li>
+                <li class="nav-items"><a href="#contact" class="nav-links">Contact me</a></li>
             </ul>
         </div>
+        
         <div class="theme">
             <button class="btn themechange"><img src="./images/moon_icon.png" alt=""></button>
+            <button class="btn contact">Contact <img src="./images/arrow-icon.png" alt=""></button>
+            <button class="btn closeicon"><img src="./images/close-black.png" alt=""></button>
             <button class="btn menuicon"><img src="./images/menu-black.png" alt=""></button>
-            <button class="btn contact">Contact <img src="./images/arrow-icon.png" alt="">
-            </button>
         </div>
 
     </nav>
-    
+
+    <section class="intro" id="home">
+        <div class="profile-img">
+            <img src="./images/profile-img.png" alt="profile-img">
+        </div>
+        <p>Hi! I'm Shamanth K V</p>
+        <h1>frontend web developer based in Bengaluru.</h1>
+        <p>I am frontend developer from Bengaluru,India with skills in multiple frontend frameworks.</p>
+        <div class="intro-buttons">
+            <button>contact me <img src="./images/right-arrow-white.png"></button>
+            <button>my resume<img src="./images/download-icon.png"></button>
+        </div>
+    </section>
+<script src="./script.js"></script>
 </body>
+
 </html>

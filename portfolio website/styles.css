@@ -5,23 +5,30 @@
 }
 body{
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 nav{
+    background-image: url(./images/header-bg-color.png);
+    background-attachment: fixed;
+    background-position:center;
+    width:100%;
     padding: 15px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: transparent;
+    z-index: 50;
 }
 .logo img{
     width: 120px;
 }
 .menu{
-    box-shadow: 1px 1px lightgray;
+    position: fixed;
+    box-shadow: 1px 1px rgb(152, 152, 152);
     padding: 10px 25px;
     border-radius: 25px;
-    background-color: white;
+    opacity: 80;
 }
 .menu ul{
     display: flex;
@@ -51,10 +58,14 @@ li{
     height: 25px;
 }
 .btn.menuicon{
+    display: none;
+    margin-left: 5px;
+}
+.closeicon{
     display:none;
 }
 .contact{
-    border: 1px solid rgba(0, 0, 0, 0.67);
+    border: 1px solid rgb(52, 50, 50);
     margin-left: 10px;
     width: 115px;
     padding: 10px;
@@ -66,3 +77,45 @@ li{
     height: 10px;
 }
 
+.intro{
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-img img{
+    height: 100px;
+}
+@media screen and (max-width: 768px) {
+    .btn.menuicon{
+        display:inline;
+    }
+    .closeicon{
+        display: none;
+    }
+
+    .menu{
+        background-color: rgb(234, 184, 248);
+        top:60px;
+        width:30%;
+        border-radius: 5px;
+        right: 25px;
+        position: fixed;
+        display: none;
+        transition-duration: 1s;
+    }
+    .menu ul{
+        display:flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .menu ul li{
+        padding: 5px;
+    }
+    .contact{
+        display:none;
+    }
+}
