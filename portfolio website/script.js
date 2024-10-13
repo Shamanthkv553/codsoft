@@ -1,15 +1,9 @@
-const menuBtn=document.querySelector(".menuicon");
-const menu=document.querySelector(".menu");
-const closeBtn=document.querySelector(".closeicon");
-function onmenuClick(){
-    menu.style.display='block';
-    menuBtn.style.display='none';
-    closeBtn.style.display='block';
+const sidemenu=document.querySelector("#sideMenu");
+
+function openMenu(){
+    sidemenu.style.transform ='translateX(-16rem)';
 }
-function oncloseClick(){
-    menu.style.display='none';
-    menuBtn.style.display='block';
-    closeBtn.style.display='none';
+
+function closeMenu(){
+    sidemenu.style.transform='translateX(16rem)';
 }
-closeBtn.addEventListener('click',oncloseClick);
-menuBtn.addEventListener('click',onmenuClick);
